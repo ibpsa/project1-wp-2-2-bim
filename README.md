@@ -1,6 +1,6 @@
-# IBPSA Project 1 WP 2.2 - Geometry Processing
+### IBPSA Project 1 WP 2.2 - Geometry Processing
 
-This repository is the coding working directory of IBPSA Project 1 Work Package 2.2 (BIM).
+This repository is the coding repository of IBPSA Project 1 Work Package 2.2 (BIM).
 
 **Link list**
   
