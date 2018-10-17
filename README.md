@@ -9,3 +9,9 @@ Internal links
   
 External links     
 [IPBSA Project 1 - WP 2.2 Repository](https://github.com/ibpsa/project1/tree/master/wp_2_2_bim)
+
+**Installation**  
+ 1. Install Conda  
+ 2. Run `conda install -c conda-forge -c dlr-sc -c pythonocc -c oce pythonocc-core==0.18.1`
+ 3. Download IfcOpenShell, e.g. from http://ifcopenshell.org/python.html  
+ 4. Add IfcOpenShell folder to Python packages
