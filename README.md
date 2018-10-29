@@ -10,6 +10,12 @@ Internal links
 External links     
 [IPBSA Project 1 - WP 2.2 Repository](https://github.com/ibpsa/project1/tree/master/wp_2_2_bim)
 
+**Tools and libraries**  
+ 1. Operating system: Windows/Linux/MacOS  
+ 2. Python: 3.X, recommended is Python 3.5  
+ 3. IfcOpenShell: v. 0.6 - [Link](https://github.com/IfcOpenShell/IfcOpenShell)  
+ 4. PythonOCC: v. 0.18.1 (OpenCascade) - [Link](https://github.com/tpaviot/pythonocc) 
+
 **Installation of IfcOpenShell and PythonOCC**  
  1. Install Conda  
  2. Run `conda install -c conda-forge -c dlr-sc -c pythonocc -c oce pythonocc-core==0.18.1`
