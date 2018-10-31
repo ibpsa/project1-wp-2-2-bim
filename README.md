@@ -23,3 +23,6 @@ External links
     - [Prebuilt for Linux (64bit for Python 3.5)](https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-35-v0.6.0-5526f42-linux64.zip)   
      - [Prebuilt for Windows (64 bit for Python 3.5)](https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-35-v0.6.0-5526f42-win64.zip)  
  4. Add IfcOpenShell folder to Python packages
+
+**IFC test files**    
+[Single objects for testing the BRep creation](https://github.com/IfcOpenShell/files)
