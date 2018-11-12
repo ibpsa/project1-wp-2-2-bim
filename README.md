@@ -8,7 +8,8 @@ Internal links
 
   
 External links     
-[IPBSA Project 1 - WP 2.2 Repository](https://github.com/ibpsa/project1/tree/master/wp_2_2_bim)
+[IPBSA Project 1 - WP 2.2 Repository](https://github.com/ibpsa/project1/tree/master/wp_2_2_bim)  
+[IfcStatistics site (for access contact fichter@e3d.rwth-aachen.de). Scans all files from IFC_Files folder](https://ibpsa-project-1.e3d.rwth-aachen.de/IfcStats/)
 
 **Tools and libraries**  
  1. Operating system: Windows/Linux/MacOS  
