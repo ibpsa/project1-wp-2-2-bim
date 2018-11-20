@@ -1,4 +1,4 @@
-IfcOpenShell offers functions to change the schema version that is used for ifcfiles on runtime. Anyway some ifc entities have been removed in from IFC2x3 to IFC4 and some attributed have been added in IFC4. Due to this you can't simply mix up the two file formats.
+IfcOpenShell offers functions to change the schema version that is used for ifcfiles on runtime. Anyway some ifc entities have been removed from IFC2x3 to IFC4 and some attributed have been added in IFC4. Due to this you can't simply mix up the two file formats.
 The following commands can be used in python:
 
 `IfcFile = ifcopenshell.open('testfile.ifc')`  
