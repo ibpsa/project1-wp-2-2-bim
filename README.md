@@ -1,6 +1,8 @@
 
 ![enter image description here](https://ibpsa.github.io/project1/assets/IBPSA-project1.png)
 
+## [IPBSA Project 1 - Repository](https://github.com/ibpsa/project1)  
+
 ### IBPSA Project 1 WP 2.2 - Geometry Processing
 
 This repository is the coding repository of IBPSA Project 1 Work Package 2.2 (BIM).
