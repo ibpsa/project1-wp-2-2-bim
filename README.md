@@ -13,8 +13,8 @@ Internal links
 
   
 External links     
-[IPBSA Project 1 - WP 2.2 Repository](https://github.com/ibpsa/project1/tree/master/wp_2_2_bim)  
-[IfcStatistics site](https://ibpsa-project-1.e3d.rwth-aachen.de/IfcStats/). For access contact fichter@e3d.rwth-aachen.de. Scans all files from IFC_Files folder. Supported file formats .ifc and .ifczip (please only one .ifc file per .ifczip archive). Maximum file size 100 MB.
+* [IPBSA Project 1 - WP 2.2 Repository](https://github.com/ibpsa/project1/tree/master/wp_2_2_bim)  
+* [IfcStatistics site](https://ibpsa-project-1.e3d.rwth-aachen.de/IfcStats/). For access contact fichter@e3d.rwth-aachen.de. Scans all files from IFC_Files folder. Supported file formats .ifc and .ifczip (please only one .ifc file per .ifczip archive). Maximum file size 100 MB.
 
 **Tools and libraries**  
  1. Operating system: Windows/Linux/MacOS  
