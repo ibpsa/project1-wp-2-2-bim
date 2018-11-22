@@ -1,0 +1,1 @@
+## Directory for ifc files used for the space boundary algorithms
