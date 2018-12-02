@@ -1,0 +1,74 @@
+\documentclass{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\clubpenalty=10000
+\widowpenalty=10000
+\hyphenpenalty=5000
+\tolerance=1000
+
+\setlength{\parindent}{0em} 
+\setlength{\parskip}{.5em}
+
+\usepackage{color}
+\definecolor{CiteColor}{rgb} {0.0,0.0,0.5} % dark blue
+\definecolor{LinkColor}{rgb} {0.0,0.0,0.0} % black
+\definecolor{URLColor} {rgb} {0.0,0.0,1.0} % blue
+
+\usepackage[colorlinks=true,
+            citecolor=CiteColor,
+            linkcolor=LinkColor,
+            urlcolor=URLColor
+           ]{hyperref}
+
+\usepackage[numbers,round]{natbib}
+
+\title{Review of Space Boundary Algorithms}
+
+\begin{document}
+
+\maketitle
+%\tableofcontents
+
+\begin{abstract}
+THIS IS CURRENTLY ONLY A LOOSE COLLECTION OF IDEAS. FEEL FREE TO CONTRIBUTE!
+\end{abstract}
+
+\section{A taxonomy of algorithms for building geometry analysis}
+
+One idea would be to make an exhaustive overview of algorithmic classes and to classify existing algorithmic work. Such a classification can by no means draw sharp boundaries. However, it may be good to establish the necessary vocabulary and to set the basis for the following body of work. When trying to categorize building geometry analysis algorithms, it would make sense to separate at the highest level between methods that improve existing space boundary information (e.g. given by the (CAD) platform providing the data input), and such algorithms that completely ignore this information and try to determine air volumes solely by analyzing the given building elements. The former is not really an algorithmic class, since it relies on an algorithm of the latter category in the first place. However, since most modern CAD platforms readily export space boundaries it may be worthwhile to review some methods for space boundary improvement.
+
+\subsection{Algorithms for improving existing space boundary information}
+
+Before one starts with a description of measures that could improve space boundaries, one has to point out what the difficulties are with space boundaries produced by typical CAD platforms. To mention a few:
+\begin{itemize}
+\item Inability to capture truly three-dimensional features (examples). Some of these are due to modeling errors by the user (give typical examples, e.g. due to wrongly set  computation height in Revit), others are inevitable, since spaces in 3D CAD are often defined by a level, a location point and maximum extent in z-direction.
+\item Inability to adhere to national standards, such as EN12831 (Europe), SP60 (Russia), and others, which make different adjustments on the positioning of the boundaries of the balance volumes. Export formats such as gbXML often use the wall-center axis variant, which needs to be geometrically corrected to meet national requirements.
+\item Problems with layered constructions that are a hybrid between constructing multiple wall-layers explicitly and using multi-layered building elements (sandwich walls). Such problems are pretty common in real-life projects and show the discrepancy between the objectives of different participants. While it makes sense to have separate elements for architects and structural engineers, most physical calculations are best carried out if we have only space-boundaries and associated layer-information.
+\end{itemize}
+Algorithms based on existing space boundaries try to improve the information provided by CAD systems using simple algorithms, such as point-in-polyhedron tests, ray-intersection-queries, and boolean operations. The results are often good enough for simple calculations such as heat load computations, etc., but it usually requires some discipline to come up with sufficiently accurate boundaries in the first place. Space boundary improvement is not suitable to come up with a "garbage to model" workflow.
+
+\subsection{Algorithms based on building element information}
+
+\begin{itemize}
+\item Describe common and distinguishing ideas in existing literature. I added some papers I know of to the list (there are many others) ... \cite{bazjanac2010requirements,lilis2017automatic,rose2013algorithm,treeck2004simulation,treeck2010introduction}
+\item One could describe other methods, such as voxel-based algorithms, which have advantages in non-watertight scenarios and are robust when the model is not very carefully designed, since small gaps are not captured if the resolution is sufficiently low. Revit implements such methods for conceptual energy analysis, but in this particular realization, there is a significant precision-tradeoff in favor of robustness. Thus, but when it comes to normative calculations, most of the energy analysis software opts for the room-based gbXML export (the other option in Revit) or IFC.
+\item Collect the main ingredients required for an efficient implementation. These could be spatial indices allowing for geometric queries, tesselation algorithms, boolean operations, etc., which are most of the time only used indirectly via a geometry framework.
+\item Define which element classes are required for the analysis.
+\end{itemize}
+
+\subsection{Definition of quality metrics}
+
+Here one could try to determine what suitable quality metrics for algorithmic comparison could be. The requirements on the quality of the produced space boundary information is clearly application-dependent (compare e.g. CFD, which needs water-tightness vs. heat load analysis which only needs area and orientation information of boundaries). Some algorithms could be ruled out for certain applications, while the best-in-class might be an overkill for other purposes. Performance is a big issue here, so methods cannot be useful if it takes days to come up with a suitable solution. Also fault-tolerance is a big topic, since no model is perfect. Some real-life models exceed thousands of rooms, and it would take weeks of model-checking and manual adjustments. Obtaining perfect space boundaries out of a model that looks good but has geometrical/topological problems is challenging for most available algorithms today.
+
+\section{Algorithmic framework}
+
+One could distinguish between typical pre-processing, processing and post-processing tasks. Processing tasks are the focus of this review. Pre-processing usually involves filtering for the element classes of interest, defeaturing algorithms, and so on. Post-processing could include things like determining envelope adjacencies (air, water, ground) or shading elements based on model information.
+
+
+\bibliographystyle{alphadin}
+\bibliography{bib/Literature}
+
+\end{document}
+
