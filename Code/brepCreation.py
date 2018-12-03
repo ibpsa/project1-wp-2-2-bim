@@ -21,7 +21,7 @@ def visualize_products(shapes):
         ifcopenshell.geom.utils.display_shape(shapes)
 
 
-filename = "../ifc_files/AC20-FZK-Haus.ifc"
+filename = "../ifc_files/misc/AC20-FZK-Haus.ifc"
 file = ifcopenshell.open(filename)
 settings = ifcopenshell.geom.settings()
 settings.set(settings.USE_PYTHON_OPENCASCADE, True)
