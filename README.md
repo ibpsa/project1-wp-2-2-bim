@@ -19,7 +19,7 @@ External links
 
 **Tools and libraries**  
  1. Operating system: Windows/Linux/MacOS  
- 2. Python: 3.X, recommended is Python 3.5  
+ 2. Python: 3.X, recommended is Python 3.5 or Python 3.6  
  3. IfcOpenShell: v. 0.6 - [Link](https://github.com/IfcOpenShell/IfcOpenShell)  
  4. PythonOCC: v. 0.18.1 (OpenCascade) - [Link](https://github.com/tpaviot/pythonocc) 
 
