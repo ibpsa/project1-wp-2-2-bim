@@ -27,8 +27,8 @@ External links
  1. Install Conda  
  2. Run `conda install -c conda-forge -c dlr-sc -c pythonocc -c oce pythonocc-core==0.18.1`
  3. Get IfcOpenShell. Build it using cmake or use the prebuilt versions: 
-    - [Prebuilt for Linux (64bit for Python 3.5)](https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-35-v0.6.0-5526f42-linux64.zip)   
-     - [Prebuilt for Windows (64 bit for Python 3.5)](https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-35-v0.6.0-5526f42-win64.zip)  
+    - [Prebuilt for Linux (64bit for Python 3.5)](https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-36-v0.6.0-33cbcc2-linux64.zip)   
+     - [Prebuilt for Windows (64 bit for Python 3.6)](https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-36-v0.6.0-33cbcc2-win64.zip)  
  4. Add IfcOpenShell folder to Python packages
 
 **IFC test files**    
