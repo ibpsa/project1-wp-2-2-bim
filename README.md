@@ -18,7 +18,6 @@ External links
 * [UDK Code Repository](https://github.com/UdK-VPT/BIM2Modelica)
 
 **Tools and libraries** 
-### Definition of tool chain
 IFC-Parser and BRep creator: IfcOpenShell (Python)  
 Geometry kernel: OpenCascade (PythonOCC)  
  1. Operating system: Windows/Linux/MacOS  
