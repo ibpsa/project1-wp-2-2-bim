@@ -17,7 +17,10 @@ External links
 * [IfcStatistics site](https://ibpsa-project-1.e3d.rwth-aachen.de/IfcStats/). For access contact fichter@e3d.rwth-aachen.de. Scans all files from IFC_Files folder. Supported file formats .ifc and .ifczip (please only one .ifc file per .ifczip archive). Maximum file size 100 MB.
 * [UDK Code Repository](https://github.com/UdK-VPT/BIM2Modelica)
 
-**Tools and libraries**  
+**Tools and libraries** 
+### Definition of tool chain
+IFC-Parser and BRep creator: IfcOpenShell (Python)  
+Geometry kernel: OpenCascade (PythonOCC)  
  1. Operating system: Windows/Linux/MacOS  
  2. Python: 3.X, recommended is Python 3.5 or Python 3.6  
  3. IfcOpenShell: v. 0.6 - [Link](https://github.com/IfcOpenShell/IfcOpenShell)  
