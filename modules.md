@@ -13,4 +13,4 @@
 
 **Output**
 - 2nd Level Space Boundary (horizontal, vertical) - Linking between IfcSpace and IfcBuildingElement using IfcRelSpaceBoundary, IfcPhysicalOrVirtualEnum (physical, virtual), IfcInternalOrExternalEnum (internal, external)
-- Geometry of Space Boundary according to one of the representation styles of IFC
+- Geometry of Space Boundary according to one of the representation types of IFC (parametric, direct or indirect representation, etc.)
