@@ -6,7 +6,7 @@
 - M5: ... e.g. Fixing relations between building elements, Spatial Data Structure, Neighbour-Search, Topology extraction, Clipping, Projection, ...
 
 **Input**
-- IFC4
+- IFC4 or IFC2x3 Files
 - IfcSpaces
 - Planar faces
 - No hybrid modelling of walls
